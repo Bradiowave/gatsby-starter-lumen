@@ -22,17 +22,18 @@ This week I mainly focused on front-end and did a bit of work on the back-end in
 ## Tasks Pulled
 ### Front End
 - Ticket 1
-    - Github: Lambda-School-Labs/Labs8-Cookbook: Pull Request 11
+    - Github: https://github.com/Lambda-School-Labs/Labs8-Cookbook/pull/11
     - Trello: https://trello.com/c/UekXSiqc/29-signup-signin-mockup
 - Ticket 2
-    - Github: Lambda-School-Labs/Labs8-Cookbook: Pull Request 13
+    - Github: https://github.com/Lambda-School-Labs/Labs8-Cookbook/pull/13
     - Trello: https://trello.com/c/300ydBX4/34-signup-component-styling
 - Ticket 3
-    - Github: Lambda-School-Labs/Labs8-Cookbook: Pull Request 15
+    - Github: https://github.com/Lambda-School-Labs/Labs8-Cookbook/pull/15
     - Trello: https://trello.com/c/q1WYECKc/24-signin-component-styling
+
 ### Back End
 - Ticket 1
-    - Github: Lambda-School-Labs/Labs8-Cookbook: Pull Request 19
+    - Github: https://github.com/Lambda-School-Labs/Labs8-Cookbook/pull/19
     - Trello: https://trello.com/c/YOC6wWAp/42-instruction-and-ingredient-prisma-models
 
 ## Detailed Analysis
