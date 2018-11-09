@@ -1,5 +1,5 @@
 ---
-title: Perfecting the Art of Perfection
+title: Lambda Labs Sprint Challenge I
 date: "2018-11-09T23:46:37.121Z"
 layout: post
 draft: false
@@ -8,7 +8,7 @@ category: "Lambda Labs"
 tags:
   - "Sprint Challenge"
   - "Labs I"
-description: "Lambda Labs Sprint Challenge 1 for Cookbook project."
+description: "Braden Walker's Sprint Challenge 1 for Cookbook project."
 ---
 
 Lambda Labs Sprint Challenge 1 for Cookbook project.

@@ -17,20 +17,20 @@ class Sidebar extends React.Component {
       <div>
         <Link to="/">
           <img
-            src={profilePic}
+            src='../../pages/photo.png'
             className="sidebar__author-photo"
-            width="75"
-            height="75"
-            alt={author.name}
+            width="150"
+            height="150"
+            alt='Braden Walker'
           />
         </Link>
         { isHomePage ? (
           <h1 className="sidebar__author-title">
-            <Link className="sidebar__author-title-link" to="/">{author.name}</Link>
+            <Link className="sidebar__author-title-link" to="/">Braden Walker</Link>
           </h1>
         ) :
           <h2 className="sidebar__author-title">
-            <Link className="sidebar__author-title-link" to="/">{author.name}</Link>
+            <Link className="sidebar__author-title-link" to="/">Braden Walker</Link>
           </h2>
         }
         <p className="sidebar__author-subtitle">{subtitle}</p>
