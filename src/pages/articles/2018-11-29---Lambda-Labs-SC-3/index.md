@@ -49,7 +49,7 @@ This week’s MVP of making our app feature complete was a tough one with many c
     - Trello: https://trello.com/c/f6Yzh6WK/79-add-instructions-and-ingredients-mutations-to-create-page
 
 ## Detailed Analysis (Back End Ticket 1)
-	The first ticket that I worked on this week was also one of the most interesting. I needed a way to connect our database to users that sign in through our 3rd party authentication site Auth0. The only connection that our cookbook app has with Auth0 after a user signs in is a token that stores the user’s information. We want to decode that token in the back end so that attackers can’t retrieve raw, open data from the front end. I set up the `authLink` function for ApolloClient to get the token from Auth0 and send it through headers on every request.
+The first ticket that I worked on this week was also one of the most interesting. I needed a way to connect our database to users that sign in through our 3rd party authentication site Auth0. The only connection that our cookbook app has with Auth0 after a user signs in is a token that stores the user’s information. We want to decode that token in the back end so that attackers can’t retrieve raw, open data from the front end. I set up the `authLink` function for ApolloClient to get the token from Auth0 and send it through headers on every request.
 ![tokenInHeaders](./tokenInHeaders.png)
 The back end server now needs to be set up to decode the token and set the user information on the server context. I assign the token to what comes from `headers.authorization` and pass it to the `jwt.verify` function along with options specific to our admin Auth0 account to decode the token. Once the token is verified, the promise returns the decoded user info and returns that for the server context.
 ![userInContext](./userInContext.png)
@@ -60,9 +60,15 @@ Finally, I could use that context in a query to return the user that is currentl
 Making our app feature complete has been the most challenging labs week so far. My team needed to split up the work and communicate a lot in order to get everything working and reach MVP. Most of our components display information that the user has input over time, such as all of their recipes and the dates on which they are scheduled. We didn’t have our front end completely connected to our back end in the beginning of the week, so we decided that one person would work to connect the front end to the server to persist our data, while the others would build out React components using dummy data. That way we could all work on functionality and make a lot of progress without having to wait on each other to finish. Once we were able to save a user’s recipes and events to our database, all we had to do for each component was fetch the database data and use that instead of our dummy data. The overall approach to the week was simple, but making making sure everything and everyone worked together was more complicated. We held zoom meetings often to divide up the work and check on everyone’s progress. We pair programmed a lot so everyone would know how each major piece of code worked. We also rotated responsibilities so that each member would have a chance to work on both the front end and back end. Even though we divided up the work to reach MVP, the team was in constant communication in order to bring all of the disparate components together into a cohesive application.
 
 **Sign in Page:** https://lambda-cookbook.netlify.com/
+
 (You must sign in for these pages to work)
+
 **Create Page:** https://lambda-cookbook.netlify.com/home/create
+
 **Recipes Page:** https://lambda-cookbook.netlify.com/home/recipes
+
 **Singular Recipe Page:** Click on a recipe card
+
 **Calendar Page:** https://lambda-cookbook.netlify.com/home/calendar
+
 **Grocery List Page:** https://lambda-cookbook.netlify.com/home/dashboard
