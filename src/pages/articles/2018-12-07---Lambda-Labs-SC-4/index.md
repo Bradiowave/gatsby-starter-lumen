@@ -3,7 +3,7 @@ title: Lambda Labs Sprint Challenge IV
 date: "2018-12-07T23:46:37.121Z"
 layout: post
 draft: false
-path: "/posts/lambda-labs-sprint-challenge-3/"
+path: "/posts/lambda-labs-sprint-challenge-4/"
 category: "Lambda Labs"
 tags:
   - "Sprint Challenge"
